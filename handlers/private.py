@@ -9,26 +9,26 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAItmWD3OC0m03OLIcpSzfiJMCDxm4xJAAKFAwACH8C5V-U9VextES_XIAQ")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎀
-ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/thewarbotZ) !**
+        f"""**ʜᴇʟʟᴏ [✅](https://telegra.ph/file/e52ea215ed4639a1b0c42.jpg) ᴀᴍ {bn}
+𒐬𝙸 𝙰𝙼 𝙰𝙽 𝙰𝙳𝚅𝙰𝙽𝙲𝙴𝙳 𝚅𝙲 𝙱𝙾𝚃. 
+𒐬𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙵𝙾𝚁 𝙵𝚁𝙴𝙴 𝙼𝚄𝚂𝙸𝙲.**
 
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔨Source Code🔨", url="https://github.com/War-Legend/camillavcbot2.0")
+                        "ᴀᴅᴅ ᴍᴇ", url="https://t.me/camillamusicbot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzsupport"
+                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/teamladz_bothub"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/thewarbotz"
+                        "ᴅᴇᴠ", url="https://t.me/alavalaathy"
                     )    
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/camillamusicbot?startgroup=true"
+                        "ᴀssɪsᴛ", url="https://t.me/ladz_vcplayer"
                     )]
             ]
         ),
@@ -37,12 +37,12 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Yes iᴍ online ✅**""",
+      await message.reply_text("""**Yes iᴍ alive✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/thewarbotz")
+                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/teamladz_bothub")
                 ]
             ]
         )
