@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🔄 **ᴘʀᴏᴄᴇssɪɴɢ..**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Camila Music"
+        user.first_name = "sᴇʟɪɴ ᴍᴜsɪᴄ"
     usar = user
     wew = usar.id
     try:
@@ -118,7 +118,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**camila Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "**sᴇʟɪɴ ᴠᴄ ᴀssɪsᴛ ᴊᴏɪɴᴇᴅ sᴜᴄᴄᴄᴇsғᴜʟʟʏ 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -129,7 +129,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, @camilaowner assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
+            f"<i>Hey {user.first_name}, selin's assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -152,8 +152,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel 🔊",
-                        url="https://t.me/warbotz")
+                        text="sᴜᴘᴘᴏʀᴛ",
+                        url="https://t.me/teamladz_bothub")
                    
                 ]
             ]
@@ -190,10 +190,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="ʏᴏᴜᴛᴜʙᴇ",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="ᴅᴏᴡɴʟᴏᴀᴅ",
                             url=f"{durl}")
 
                     ]
@@ -201,14 +201,14 @@ async def play(_, message: Message):
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/5b2ed5398e7cc024c8838.jpg"
+            thumb_name = "https://telegra.ph/file/e52ea215ed4639a1b0c42.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="YouTube 🎬",
+                                text="ʏᴏᴜᴛᴜʙᴇ",
                                 url=f"https://youtube.com")
 
                         ]
@@ -258,10 +258,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="ʏᴏᴜᴛᴜʙᴇ",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="ᴅᴏᴡɴʟᴏᴀᴅ",
                             url=f"{durl}")
 
                     ]
