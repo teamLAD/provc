@@ -7,7 +7,7 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    
+    await message.reply_sticker("CAACAgUAAxkBAAINH2EbULD3DG2nmRvATLIt7x4Qe3JuAAJCAwACNgLYVN6jlAlHL_TYHgQ")
     await message.reply_text(
         f"""**ʜᴇʟʟᴏ [✅](https://telegra.ph/file/e52ea215ed4639a1b0c42.jpg) ᴀᴍ {bn}
 𒐬𝙸 𝙰𝙼 𝙰𝙽 𝙰𝙳𝚅𝙰𝙽𝙲𝙴𝙳 𝚅𝙲 𝙱𝙾𝚃. 
@@ -18,7 +18,7 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴀᴅᴅ ᴍᴇ", url="https://t.me/camillamusicbot?startgroup=true")
+                        "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/camillamusicbot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
                         "sᴜᴘᴘᴏʀᴛ", url="https://t.me/teamladz_bothub"
