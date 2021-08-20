@@ -124,7 +124,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name},@camilaowner assistant userbot couldn't join your group due to heavy join requests @camila_support. Make sure userbot is not banned in group and try again later!")
+                        f"<b>🛑 ғʟᴏᴏᴅ ᴡᴀɪᴛ ᴇʀʀᴏʀ 🛑</b> \n\Hey {user.first_name}, asdisstant could't join the group due to too many requests.")
     try:
         await USER.get_chat(chid)
     except:
@@ -215,18 +215,18 @@ async def play(_, message: Message):
                     ]
                 )
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
+             await lel.edit(f" Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+            return await lel.edit(" **What's the song you want to play?**")
+        await lel.edit("**ғᴇᴛᴄʜɪɴɢ ʏᴏᴜʀ sᴏɴɢ...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit(" **ᴘʀᴏᴄᴇssɪɴɢ ʏᴏᴜʀ sᴏɴɢ...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -249,7 +249,7 @@ async def play(_, message: Message):
                 
         except Exception as e:
             await lel.edit(
-                "❌ Song not found.\n\nTry another song or maybe spell it properly."
+                "ᴏᴏᴘs! sᴏɴɢ ɴᴏᴛ ғᴏᴜɴᴅ.\n\nᴛʀʏ ᴏɴᴄᴇᴍᴏʀᴇ ᴅᴜᴅᴇ."
             )
             print(str(e))
             return
@@ -279,7 +279,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
+        caption="**sᴏɴɢ:** {}\n**ᴅᴜʀᴀᴛɪᴏɴ:** {} min\n**ᴀᴅᴅᴇᴅ ʙʏ:** {}\n\n**#⃣ ǫᴜᴇɴᴇᴅ ᴘᴏsɪᴛɪᴏɴ:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
@@ -290,7 +290,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
+        caption="**sᴏɴɢ:** {}\n**ᴅᴜʀᴀᴛɪᴏɴ:** {} min\n**ᴀᴅᴅᴇᴅ ʙʏ:** {}\n\n**ɴᴏᴡ ᴘʟᴀʏɪɴɢ ᴀᴛ `{}`...**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")
