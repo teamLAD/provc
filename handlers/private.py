@@ -18,7 +18,7 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/camillamusicbot?startgroup=true")
+                        "ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/ladz_vc_bot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
                         "sᴜᴘᴘᴏʀᴛ", url="https://t.me/TEAM_LAD"
